@@ -25,9 +25,9 @@ from miio.airfresh import (  # pylint: disable=import-error, import-error
     OperationMode as AirfreshOperationMode,
 )
 from miio.airfresh_t2017 import (  # pylint: disable=import-error, import-error
+    DisplayOrientation as AirfreshT2017DisplayOrientation,
     OperationMode as AirfreshT2017OperationMode,
     PtcLevel as AirfreshT2017PtcLevel,
-    DisplayOrientation as AirfreshT2017DisplayOrientation,
 )
 from miio.airhumidifier import (  # pylint: disable=import-error, import-error
     LedBrightness as AirhumidifierLedBrightness,
@@ -61,7 +61,6 @@ from miio.fan import (  # pylint: disable=import-error, import-error
 from miio.fan_leshow import (  # pylint: disable=import-error, import-error
     OperationMode as FanLeshowOperationMode,
 )
-
 import voluptuous as vol
 
 from homeassistant.components.fan import (
@@ -783,9 +782,7 @@ FEATURE_FLAGS_FAN_P5 = (
     | FEATURE_SET_LED
 )
 
-FEATURE_FLAGS_FAN_LESHOW_SS4 = (
-    FEATURE_SET_BUZZER
-)
+FEATURE_FLAGS_FAN_LESHOW_SS4 = FEATURE_SET_BUZZER
 
 SERVICE_SET_BUZZER_ON = "fan_set_buzzer_on"
 SERVICE_SET_BUZZER_OFF = "fan_set_buzzer_off"
