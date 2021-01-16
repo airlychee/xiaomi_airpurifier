@@ -51,6 +51,7 @@ This custom component is more or less the beta version of the [official componen
 | Pedestal Fan Fan P5    | dmaker.fan.p5          | | |
 | Pedestal Fan Fan P9     | dmaker.fan.p9         | | Supported as soon as python-miio 0.5.4 is released.  |
 | Pedestal Fan Fan P10    | dmaker.fan.p10        | | Supported as soon as python-miio 0.5.4 is released.  |
+| Rosou SS4 Ventilator    | leshow.fan.ss4        | | Supported as soon as python-miio 0.5.5 is released.  |
 | Mijia Pedestal Fan      | dmaker.fan.p11        | BPLDS03DM  | Supported as soon as python-miio 0.5.4 is released. 2800mAh, 24W, <=58dB  |
 
 Support unknown / Testing required:
@@ -516,6 +517,24 @@ This paragraph was moved to [docs/dmaker-airfresh-t2017.md](docs/dmaker-airfresh
   - `button_pressed` (zhimi.fan.v2 & v3 only)
   - `led` (zhimi.fan.v2 only)
   - `battery_state` (zhimi.fan.v2 only)
+
+### Rosou SS4 Ventilator (leshow.fan.ss4)
+
+* Power (on, off)
+* Operation modes (manual, sleep, strong, natural)
+* Speed levels (Level 1, Level 2, Level 3, Level 4 / 0...100%)
+* Oscillate (on, off)
+* Buzzer (on, off)
+* Delayed turn off (minutes)
+
+* Attributes
+  - `model`
+  - `mode`
+  - `speed`
+  - `buzzer`
+  - `oscillate`
+  - `delay_off_countdown`
+  - `error_detected`
 
 
 ## Install
